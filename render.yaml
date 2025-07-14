@@ -2,13 +2,13 @@ services:
   - type: web
     name: llm-brand-visibility-audit
     env: python
-    plan: free  # Use free tier to keep costs low
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DEEPSEEK_API_KEY
-        sync: false  # Set manually in Render dashboard
+        sync: false
       - key: CONTENTSTUDIO_API_KEY
         sync: false
       - key: PYTHON_VERSION
-        value: 3.10  # Match your development environment
+        value: 3.10
