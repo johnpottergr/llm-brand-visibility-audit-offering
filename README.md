@@ -1,4 +1,4 @@
-# LLM Brand Visibility Audit
+# LLM Brand Visibility Audit @ llmvisibility.co
 Analyzes brand perception, competitor benchmarking, and citations in LLM responses.
 
 ## Setup
